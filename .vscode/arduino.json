@@ -2,6 +2,6 @@
     "port": "COM3",
     "board": "arduino:avr:uno",
     "programmer": "avrisp",
-    "sketch": "2_Voltemeter\\Arduino\\Arduino.ino",
+    "sketch": "3_Temperature_Humidity\\Arduino\\Arduino.ino",
     "output": "build"
 }

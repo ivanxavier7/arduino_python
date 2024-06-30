@@ -46,3 +46,18 @@ Circuits:
 
 2_Voltemeter/Arduino/Arduino.ino:
 https://www.circuits-diy.com/how-to-use-a-potentiometer-arduino-tutorial/
+
+
+Needed:
+Gyroscope
+Accelerometer
+Relays ( Not sure )
+
+
+https://www.youtube.com/watch?v=KMhbV1p3MWk
+
+
+Optimize:
+https://docs.arduino.cc/retired/hacking/software/PortManipulation/
+
+Use registers like assembly to save memory and be more efficient.
