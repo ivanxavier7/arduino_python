@@ -41,3 +41,8 @@ arduino.json:
     "sketch": "Arduino\\Arduino.ino",
     "output": "build"
 }
+
+Circuits:
+
+2_Voltemeter/Arduino/Arduino.ino:
+https://www.circuits-diy.com/how-to-use-a-potentiometer-arduino-tutorial/

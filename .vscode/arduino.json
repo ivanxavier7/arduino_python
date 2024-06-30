@@ -2,6 +2,6 @@
     "port": "COM3",
     "board": "arduino:avr:uno",
     "programmer": "avrisp",
-    "sketch": "Arduino\\Arduino.ino",
+    "sketch": "2_Voltemeter\\Arduino\\Arduino.ino",
     "output": "build"
 }
