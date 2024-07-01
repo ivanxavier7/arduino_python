@@ -59,5 +59,8 @@ https://www.youtube.com/watch?v=KMhbV1p3MWk
 
 Optimize:
 https://docs.arduino.cc/retired/hacking/software/PortManipulation/
+https://www.youtube.com/playlist?list=PLKL6KBeCnI3X7cb1sznYuyScUesOxS-kL
+https://www.youtube.com/watch?v=6q1yEb_ukw8
+
 
 Use registers like assembly to save memory and be more efficient.
