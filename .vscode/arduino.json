@@ -2,6 +2,6 @@
     "port": "COM3",
     "board": "arduino:avr:uno",
     "programmer": "avrisp",
-    "sketch": "3_Temperature_Humidity\\Arduino\\Arduino.ino",
+    "sketch": "Teste\\Teste.ino",
     "output": "build"
 }
