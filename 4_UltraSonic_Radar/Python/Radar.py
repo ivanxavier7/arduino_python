@@ -19,8 +19,8 @@ screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Radar")
 
 # Define as cores
-green = (98, 245, 31)
-red = (255, 10, 10)
+green = (26, 153, 146)
+red = (97, 237, 132)
 black = (0, 0, 0)
 semi_transparent_black = (0, 0, 0, 4)  # Cor preta semi-transparente
 
@@ -71,19 +71,23 @@ def draw_line():
     angle = math.radians(iAngle)
     x = int(center_x + 0.88 * height * math.cos(angle))
     y = int(center_y - 0.88 * height * math.sin(angle))
-    pygame.draw.line(screen, (30, 250, 60), (center_x, center_y), (x, y), 9)
+    pygame.draw.line(screen, (132, 184, 171), (center_x, center_y), (x, y), 3)
 
 def draw_text():
     screen.fill(black, (0, int(0.9352 * height), width, height))
-    text = font.render(f"Object: {'Out of Range' if iDistance > 40 else 'In Range'}", True, green)
-    screen.blit(text, (int(0.125 * width), int(0.9723 * height)))
-    text = font.render(f"Angle: {iAngle} °", True, green)
-    screen.blit(text, (int(0.52 * width), int(0.9723 * height)))
-    text = font.render("Distance: ", True, green)
-    screen.blit(text, (int(0.74 * width), int(0.9723 * height)))
+
+    object_text = font.render(f"Object: {'Out of Range' if iDistance > 40 else 'In Range'}", True, green)
+    screen.blit(object_text, (int(0.125 * width), int(0.9723 * height)))
+
+    angle_text = font.render(f"Angle: {iAngle} °", True, green)
+    screen.blit(angle_text, (int(0.52 * width), int(0.9723 * height)))
+
+    distance_label_text = font.render("Distance: ", True, green)
+    screen.blit(distance_label_text, (int(0.71 * width), int(0.9723 * height)))
+
     if iDistance < 40:
-        text = font.render(f"{iDistance} cm", True, green)
-        screen.blit(text, (int(0.775 * width), int(0.9723 * height)))
+        distance_value_text = font.render(f"{iDistance} cm", True, green)
+        screen.blit(distance_value_text, (int(0.82 * width), int(0.9723 * height)))
 
 # Thread para leitura serial
 serial_thread = threading.Thread(target=read_serial_thread, daemon=True)
