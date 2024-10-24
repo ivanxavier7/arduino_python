@@ -1,7 +1,12 @@
 import time
 import serial
 
-arduinoData=serial.Serial('com3', 115200)
+# PC
+# arduinoData=serial.Serial('com3', 115200)
+
+# Raspberry Pi
+arduinoData = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
+
 time.sleep(1)
 
 while 1:
